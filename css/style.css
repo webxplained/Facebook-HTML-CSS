@@ -21,7 +21,8 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    width: 80%;
+    width: 100%;
+    max-width: 1000px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -128,8 +129,13 @@ main {
 
 footer {
     background: #ffffff;
-    padding: 0 20%;
     height: 30vh;
+}
+
+.footer-contents {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 footer ol {
