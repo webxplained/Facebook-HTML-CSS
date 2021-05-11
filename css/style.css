@@ -6,21 +6,26 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f0f2f5;
+    background-color: #f0f2f5;
     color: #1c1e21;
 }
 
 main {
     height: 70vh;
-    width: 80vw;
+    width: 100vw;
     position: relative;
     margin: 0 auto;
+}
+
+footer {
+    height: 30vh;
+    background-color: #ffffff;
 }
 
 .row {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     max-width: 1000px;
     position: absolute;
@@ -44,18 +49,17 @@ main {
 }
 
 .col-logo h2 {
-    font-size: 26px;
+    font: 26px;
     font-weight: 400;
-    padding: 0px 30px;
+    padding: 0 30px;
     line-height: 32px;
 }
 
 .col-form .form-container {
-    background-color: #fff;
+    background-color: #ffffff;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1), 0 8px 16px rgb(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     padding: 20px;
     max-width: 400px;
@@ -70,14 +74,13 @@ main {
 }
 
 .col-form .form-container input {
-    background: #ffffff;
     border: 1px solid #dddfe2;
     color: #1d2129;
     padding: 0 8px;
     outline: none;
 }
 
-.col-form .form-container input:focus, .col-form .form-container input:active {
+.col-form .form-container input:focus {
     border-color: #1877f2;
     box-shadow: 0 0 0 2px #e7f3ff;
 }
@@ -101,6 +104,10 @@ main {
     border-bottom: 1px solid #dadde1;
 }
 
+.col-form .form-container a:hover {
+    text-decoration: underline;
+}
+
 .col-form .form-container .btn-new {
     background-color: #42b72a;
     border: none;
@@ -113,23 +120,18 @@ main {
     margin-top: 20px;
 }
 
-.col-form>p {
+.col-form p {
     font-size: 14px;
-    max-width: 400px;
 }
 
-.col-form>p a {
-    color: #1c1e21;
+.col-form p a {
     text-decoration: none;
+    color: #1c1e21;
+    font-weight: 600;
 }
 
-.col-form>p a:hover {
+.col-form p a:hover {
     text-decoration: underline;
-}
-
-footer {
-    background: #ffffff;
-    height: 30vh;
 }
 
 .footer-contents {
@@ -161,15 +163,13 @@ footer ol:first-child li:last-child button {
 
 footer ol li {
     padding-right: 15px;
-}
-
-footer ol li, footer ol li a {
-    color: #385898;
     font-size: 12px;
+    color: #385898;
 }
 
 footer ol li a {
     text-decoration: none;
+    color: #385898;
 }
 
 footer ol li a:hover {
